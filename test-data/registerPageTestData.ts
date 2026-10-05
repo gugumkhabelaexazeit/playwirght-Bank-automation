@@ -11,7 +11,7 @@ export interface RegisterFormData {
   username: string;
 }
 export const registerFormData: RegisterFormData = {
-  firstName: "zee",
+  firstName: "Jordan",
   lastName: "Taylor",
   street: "123 Main Street",
   city: "Beverly Hills",
@@ -19,7 +19,7 @@ export const registerFormData: RegisterFormData = {
   zipCode: "90210",
   phoneNumber: "5551234567",
   ssn: "123456789",
-  username: "zeeTaylor",
+  username: "JordanTaylor",
 };
 export const registerPassword = "TestPassword123!";
 export const MAX_RETRIES = 3;

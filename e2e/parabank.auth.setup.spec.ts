@@ -9,11 +9,13 @@ import {
   registerFormData,
   registerPassword,
 } from "../test-data/registerPageTestData";
+
 test.beforeEach(async () => {
   fs.mkdirSync(path.dirname(authFile), { recursive: true });
   fs.writeFileSync(authFile, "{}", "utf-8");
   console.log("🧹 Cleared authentication file before test.");
 });
+
 test("Register at Parabank", async ({ page }) => {
   const registerPage = new RegisterPage(page);
   for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
