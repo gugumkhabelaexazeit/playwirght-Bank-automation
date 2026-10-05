@@ -32,7 +32,7 @@ test('Transfer funds between own banking accounts', async ({ page }) => {
   }
   const transferPage = new TransferFundsPage(page);
   await transferPage.goTo();
-  let transferAmout = '100';
+  let transferAmout = operationTestData.transfer.amount;
   fromAccountId = await transferPage.getFromAccountId();
   if (fromAccountId == null) {
     throw new Error('Source account ID was not returned');
